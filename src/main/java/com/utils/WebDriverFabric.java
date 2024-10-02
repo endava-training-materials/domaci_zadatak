@@ -36,11 +36,11 @@ public class WebDriverFabric {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-        log.info(String.format("Starting browser - %s", browser));
+        log.info("Starting browser - {}", browser);
 
         driver.get(URL);
 
-        log.info(String.format("Opening page - %s", URL));
+        log.info("Opening page - {}", URL);
 
         return driver;
     }

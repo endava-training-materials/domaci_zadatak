@@ -16,7 +16,7 @@ import static org.testng.Assert.*;
 
 public class TestWebPages {
 
-    private static final Logger log = LogManager.getLogger(TestWebPages.class.getName());
+    private static final Logger log = LogManager.getLogger(TestWebPages.class);
 
     private WebDriver driver = null;
     private static final String USERNAME = "standard_user";
@@ -28,6 +28,13 @@ public class TestWebPages {
 
         driver = WebDriverFabric.startBrowser(browser);
     }
+
+    @AfterMethod(alwaysRun = true)
+    public void closeBrowser(){
+
+        WebDriverFabric.closeBrowser(driver);
+    }
+
 
     @Test
     public void testValidLogin(){
@@ -55,12 +62,6 @@ public class TestWebPages {
                 "Login button is not visible on a page");
 
         log.info("************* Test Ended *************");
-    }
-
-    @AfterMethod(alwaysRun = true)
-    public void closeBrowser(){
-
-        WebDriverFabric.closeBrowser(driver);
     }
 
 

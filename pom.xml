@@ -9,10 +9,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>1.8</java.version>
-        <selenium.version>4.1.3</selenium.version>
-        <webdrivermanager.version>5.1.0</webdrivermanager.version>
-        <testng.version>7.5</testng.version>
+        <java.version>11</java.version>
+        <selenium.version>4.25.0</selenium.version>
+        <webdrivermanager.version>5.8.0</webdrivermanager.version>
+        <testng.version>7.10.2</testng.version>
 
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -20,8 +20,8 @@
         <maven.surefire.version>2.20</maven.surefire.version>
         <maven.failsafe.version>2.20</maven.failsafe.version>
         <maven.compiler.version>3.10.0</maven.compiler.version>
-        <log4j.api.version>2.8.2</log4j.api.version>
-        <log4j.core.version>2.8.2</log4j.core.version>
+        <log4j.api.version>2.20.0</log4j.api.version>
+        <log4j.core.version>2.20.0</log4j.core.version>
     </properties>
 
     <dependencies>

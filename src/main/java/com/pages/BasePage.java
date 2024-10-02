@@ -25,7 +25,7 @@ public class BasePage {
         String currentURL =
                 driver.getCurrentUrl();
 
-        log.info(String.format("Current URL is %s.", currentURL));
+        log.info("Current URL is {}.", currentURL);
 
         return currentURL;
 

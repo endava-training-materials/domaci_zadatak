@@ -16,34 +16,34 @@ public class LoginPage extends BasePage {
 
     }
 
-    private By usernameField  = By.id("user-name");
+    private final By usernameField  = By.id("user-name");
 
-    private By passwordField = By.cssSelector("input[type='password");
+    private final By passwordField = By.cssSelector("input[type='password");
 
-    private By loginButton = By.name("login-button");
+    private final By loginButton = By.name("login-button");
 
 
 
 
     public void typeOnUsernameFieldName(String username){
 
-        WebElement usernameField =
+        WebElement nameField =
                 driver.findElement(this.usernameField);
 
-        usernameField.sendKeys(username);
+        nameField.sendKeys(username);
 
-        log.info(String.format("Typing username - %s", username ));
+        log.info("Typing username - {}", username );
     }
 
 
     public void typeOnPasswordField(String password){
 
-        WebElement usernameField =
+        WebElement passField =
                 driver.findElement(this.passwordField);
 
-        usernameField.sendKeys(password);
+        passField.sendKeys(password);
 
-        log.info(String.format("Typing password - %s", password ));
+        log.info("Typing password - {}", password );
     }
 
     public void clickOnLoginButton(){
