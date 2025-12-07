@@ -1,6 +1,5 @@
 package com.utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -21,12 +20,10 @@ public class WebDriverFabric {
 
         if (browser.equalsIgnoreCase("chrome")){
 
-            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
 
         } else if (browser.equalsIgnoreCase("firefox")){
 
-            WebDriverManager.firefoxdriver().setup();
             driver =  new FirefoxDriver();
 
         } else {
